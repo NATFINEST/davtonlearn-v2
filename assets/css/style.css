@@ -9,6 +9,13 @@ body {
 a{
 	text-decoration: none;
 }
+.bg-nude{
+	background: transparent;
+	border: 0;
+}
+.form-control{
+	line-height: 2.3;
+}
 .m-200{
 	margin-top: -120px;
 }
@@ -75,11 +82,50 @@ a{
 	border-radius: 5px;
 	font-weight: bold;
 }
+.lms{
+	color: #378ae2!important;
+	font-weight: 500;
+}
+.lms:hover{
+	color: #333!important;
+}
+.login-modal{
+	margin-left: 40%;
+	font-size: 20px;
+}
+.login-btn{
+	margin-top: 20px!important;
+}
+.btn-linkedin{
+	background: #17a2b8;
+	color: #fff;
+}
+.btn-linkedin:hover{
+	background: #0c90a5;
+}
+.modal-backdrop{
+	background: #000;
+	opacity: 1;
+}
+.breadcrumb{
+	margin-bottom: 0;
+}
 .banner{
 	background: url(../img/stud.jpg) ;
 	height: 100%;
 	min-height: 600px;
-	background-size: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.banner.course{
+	background-image: radial-gradient(circle at 28% 36%,#ff9195,#ff5d63);
+	height: 100%;
+	padding: 20px;
+	border: 0;
+	box-shadow: none;
+	min-height: auto;
+	border-radius: 0;
 }
 .period{
 	font-size: 50px;
@@ -93,7 +139,7 @@ a{
 	font-size: 16px;
 }
 .courses{
-	padding: 10px;
+	padding: 40px 0px 40px 0px;
 	position: relative;
 	background: #fff;
 	border: 1px solid #eee;
@@ -199,28 +245,36 @@ a{
     min-height: 57px
     /*overflow: hidden;*/
 }
+.helping{
+	margin: 50px 0 50px 0;
+}
 .helping-icons i::before{
 	font-size: 90px;
 	color:#2d80d9;
+}
+.our-clients{
+	background: #f7f7f7;
+	text-align: center;
+	/*padding-bottom: 20px;*/
 }
 .client {
   	background-color: #2d80d9;
     /*background-image: linear-gradient(#559eec, #1e75d2);*/
 	display: inline-block;
-	height: 130px;
+	height: 200px;
 	margin-left: 0;
 	margin-top: 0;
-	padding: 60px;
+	padding: 80px 0;
 	position: relative;
 	width: 50px;
 	z-index: 99;
 }
 .client:before {
   	border-left: 70px solid #2d80d9;
-	border-top: 65px solid transparent;
-	border-bottom: 65px solid transparent;
+	border-top: 100px solid transparent;
+	border-bottom: 100px solid transparent;
 	content: "";
-	height: 130px;
+	height: 200px;
 	left: 100%;
 	position: absolute;
 	top: 0px;
@@ -229,7 +283,7 @@ a{
 .client h5{
 	width: 103%;
     position: absolute;
-    margin-top: -5px;
+    margin-top: 30px;
     color: #fff;
 }
   .client-pointer {
@@ -317,8 +371,8 @@ a{
 	display: inline-flex;
     background: #f5f5f5;
     position: absolute;
-    max-height: 130px;
-    min-height: 130px;
+    max-height: 200px;
+    min-height: 200px;
 }
 .d-clients:before {
     content: "";
@@ -353,7 +407,8 @@ a{
     margin-right: 15px;
 }
 .client-logo.dia{
-	margin-left: 15%;
+	margin: 0 auto;
+	height: auto;
 }
 .client-logo.lea{
 	height: 70%;
@@ -393,7 +448,7 @@ a{
     border-left: 2px dashed #118aef;
     margin: auto;
     position: absolute;
-    left: 109%;
+    left: 100%;
 }
 
 .clients{
@@ -419,6 +474,9 @@ a{
     margin-left: 60px;
     margin-top: 10px;
     margin-right: 15px;
+}
+.d-media{
+	padding: 30px;
 }
 .microsoft-logo, .images{
  	display: block;
@@ -530,6 +588,121 @@ header.request{
 .intl-tel-input{
 	width: 100%;
 }
+.section{
+	background: #fff;
+	border: none;
+	padding: 0px;
+	width: 100%;
+	margin-bottom: 40px;
+}
+.title h2{
+	font-weight: 400;
+}
+.feat-icon,.feat-text{
+	display: inline-block;
+}
+.feat-icon{
+	vertical-align: middle;
+}
+.feat-icon i:before{
+	color: #ff8286;
+    border: 1px solid #ff878c;
+    border-radius: 45%;
+    font-size: 22px;
+    height: 33px;
+    width: 29px;
+    padding-left: 3px;
+}
+.feat-text p{
+	font-size: 14px;
+	font-weight: 400;
+	margin-left: 10px;
+}
+.display-flex{
+	display: flex;
+	padding: 10px 0px 10px 0px;
+}
+.enroll{
+	background: #eee;
+    padding: 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+a.btn-instructor{
+	font-size: 16px;
+    color: #008ad6;
+}
+a.btn-instructor:hover{
+	color: #ff6167;
+}
+.fw-300{
+	font-weight: 300;
+}
+.btn-enroll{
+	font-size: 16px
+}
+.instructor-modal {
+    margin-left: 23%;
+    font-size: 20px;
+}
+.instructor-profile{
+	font-size: 14px;
+	color: #333;
+}
+.card-header, .card-link,.card-link:hover{
+	background-color:#fff;
+	text-align:left;
+	border:none;
+	font-size: 16px;
+	font-weight: 400;
+}
+.card-body{
+	padding:10px 10px;
+	font-size: 14px;
+	color: #999;
+	text-align: justify;
+	font-weight: 300
+}
+.card{
+	width:100%;
+	border:0;
+	border-bottom: 1px solid #ccc;
+}
+.p{
+	position:absolute;
+	top:5px;
+	right:20px;
+	font-size:20px;
+	color:white;
+	-webkit-animation: minus 0.5s;
+}
+
+@keyframes minus {
+    from {
+        transform:rotate(45deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+[aria-expanded="false"] > .expanded, [aria-expanded="true"] > .collapsed {display: none;}
+
+.card-inner{
+    margin-left: 4rem;
+}
+
+video#backgroundvid {  
+   position: fixed; right: 0; 
+   bottom: 0; 
+   min-width: 100%; 
+   min-height: 100%; 
+   width: auto; 
+   height: auto; 
+   z-index: -100; 
+   background: url(polina.jpg) no-repeat; background-size: cover;  
+}
+
 
 @media only screen and (max-width: 576px){
  	.clients-logo, .images{
@@ -572,6 +745,7 @@ header.request{
 			text-align: center;
 			height: 30px;
 			width: 100%;
+			padding: 40px 0;
 		}
 		.client:before {
 		    border-left: 10em solid transparent;
@@ -583,7 +757,7 @@ header.request{
 		    left: 0;
 		    width: 0;
 		    position: relative;
-    		top: 120px;
+    		top: 105px;
 		}
 		.client h5{
 			width: auto;
@@ -591,12 +765,16 @@ header.request{
 		}
 		.dia{
 			margin-bottom: 30px;
+			padding-top: 30px;
 		}
 		.dia:after{
 			left: 8%;
 			border-bottom: 2px dashed #118aef;
 			top: 120%;
 			width: 90%;
+		}
+		.dia.lea{
+			padding-top: 0;
 		}
 		.dia,.lea{
 			display: grid;
@@ -609,7 +787,7 @@ header.request{
 		}
 		.client-logo.dia {
 		    margin: auto;
-		    height: 100%
+		    height: auto;
 		}
 		.client-logo.lea {
 		    height: 80%;
@@ -630,17 +808,24 @@ header.request{
 		    left: 0;
 		    width: 0;
 		    position: relative;
-    		top: 68px;
+    		top: 83px;
 		}
 		.client{
-			padding: 20px;	
+			padding: 35px;	
+		}
+		.client h4{
+			margin-top: -20px;	
 		}
 		.client-logo{
 			margin:auto;
 		}
 		.client-logo.dia {
 		    margin: auto;
-		    height: 100%;
+		    height: auto;
+		}
+		.client-logo.dia.lea {
+		    margin: auto;
+		    height: auto;
 		}
 		.client-logo.lea {
 		    height: 62%;
@@ -686,19 +871,15 @@ header.request{
 		.client-logo{
 			margin-left: 30px;
 		}
-		.client-logo.dia {
-		    margin-left: 5%;
-		    margin-top: -5px;
-		    height: 80%;
-		}
 		.client-logo.lea {
 		    height: 100%;
 		    margin-top: -5px;
 		}
 		.client{
 			text-align: center;
-			height: 30px;
+			padding: 50px 0;
 			width: 100%;
+			height: 50px;
 		}
 		.client:before {
 		    border-left: 15em solid transparent;
@@ -717,14 +898,18 @@ header.request{
 			position: relative;
 		}
 		.dia{
-			margin-bottom: 30px;
-			display: inline-flex;
+			margin-top: 60px;
 		}
 		.dia:after{
 			left: 8%;
 			border-bottom: 2px dashed #118aef;
-			top: 130px;
+			top: 100%;
 			width: 90%;
+		}
+		.dia.lea{
+			margin: 0 auto;
+		    margin-bottom: 20px;
+		    height: auto;
 		}
 		footer.sub div.container{
 			max-width:100%;
@@ -757,18 +942,23 @@ header.request{
 			height: 90%;
 		}
 		.client-logo.dia {
-		    margin-left: 5%;
-		    margin-top: -5px;
-		    height: 80%
+		    height: auto;
+		    margin: auto;
 		}
 		.client-logo.lea {
 		    height: 100%;
 		    margin-top: -5px;
 		}
+		.dia.lea {
+		    margin: 0;
+		    height: auto;
+		    margin-bottom: 20px;
+		}
 		.client{
 			text-align: center;
 			height: 30px;
 			width: 100%;
+			padding: 50px;
 		}
 		.client:before {
 		    border-left: 20em solid transparent;
@@ -779,7 +969,7 @@ header.request{
 		    height: 130px;
 		    left: 0;
 		    position: relative;
-		    top: 120px;
+		    top: 117px;
 		    width: 0;
 		}
 		.client h5{
@@ -788,12 +978,13 @@ header.request{
 		}
 		.dia{
 			margin-bottom: 30px;
-			display: flex;
+			display: initial;
+			margin-top: 60px;
 		}
 		.dia:after{
 			left: 8%;
 			border-bottom: 2px dashed #118aef;
-			top: 120px;
+			top: 100%;
 			width: 90%;
 		}
   	 }
