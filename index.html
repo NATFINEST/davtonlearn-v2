@@ -15,14 +15,16 @@
 		<!-- endbuild -->
 
 		<!-- material design icons -->
-    <link href="assets/css/materialdesignicons.css" media="all" rel="stylesheet" type="text/css" />
-    <!-- material design icons -->
+	    <link href="assets/css/materialdesignicons.css" media="all" rel="stylesheet" type="text/css" />
+	    <!-- material design icons -->
     
-    <!--Simp Font -->
-    <link rel="stylesheet" href="assets/css/simp.css">
-    <!-- Simp Font -->
+	    <!--Simp Font -->
+	    <link rel="stylesheet" href="assets/css/simp.css">
+	    <!-- Simp Font -->
 
-    <link rel="stylesheet" href="assets/css/intlTelInput.css">
+    	<link rel="stylesheet" href="assets/css/intlTelInput.css">
+    	<link rel="stylesheet" href="assets/css/nav.css">
+    	<link rel="stylesheet" href="assets/css/dcalendar.picker.css">
 
 		<!-- style:css -->
 		<link rel="stylesheet" href="assets/css/style.css">
@@ -74,119 +76,124 @@
 			</div>
 		</div><!--advert section-->
 
-		<nav class="navbar navbar-expand-md navbar-light bg-default container">
+		<nav class="navbar navbar-expand-md navbar-light bg-default">
 
-			 <a class="navbar-brand float-left" href="."><img src="assets/img/logo.png"></a>
-			 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-				 <span class="navbar-toggler-icon"></span>
-			 </button>
+			<div class="container">
+				<a class="navbar-brand float-left" href="."><img src="assets/img/logo.png"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+					 <span class="navbar-toggler-icon"></span>
+				 </button>
 
-			 <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-				 <ul class="navbar-nav ml-auto">
-					 <li class="nav-item">
-						 <a class="nav-link ml-2 lms" href="#">LMS:Education</a>
-					 </li>
-					 <li class="nav-item">
-						 <a class="nav-link ml-2 lms" href="#">LMS:Corporate</a>
-					 </li>
-					 <li class="nav-item">
-						 <a class="nav-link ml-4 btn btn-login" data-toggle="modal" data-target="#login">Login</a>
-					 </li>
+				 <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+					 <ul class="navbar-nav ml-auto">
+						 <li class="nav-item">
+							 <a class="nav-link ml-2 lms cursor-pointer" data-toggle="modal" data-target="#signup">Sign Up</a>
+						 </li>
+						 <li class="nav-item">
+							 <a class="nav-link ml-4 btn btn-login" data-toggle="modal" data-target="#login">Login</a>
+						 </li>
 
-					 <!-- Modal For Login -->
-					<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
-					  <div class="modal-dialog" role="document">
-					    <div class="modal-content bg-nude" style="width: 80%; margin: 0 auto;">
-					      <div class="modal-header">
-					        <h5 class="modal-title text-center text-white login-modal" id="login">Login</h5>
-					        <button type="button" class="close text-white login-btn" data-dismiss="modal" aria-label="Close">
-					          <span class="mdi mdi-close"></span>
-					        </button>
-					      </div>
-					      <div class="modal-body bg-light">
-					        <div class="container-fluid text-danger">
-							    <form class="px-4 py-3">
-									<div class="form-group">
-									    <input type="email" class="form-control" id="email1" aria-describedby="emailHelp" placeholder="Email">
-								  	</div>
-								    <div class="form-group">
-									    <input type="password" class="form-control" id="password1" placeholder="Password">
-									</div>
-									<p><a href="">Forgot Password</a></p>
-									<div class="text-center">
-										<button class="btn btn-success btn-block btn-lg">LOG IN</button>
-									</div>
-									<div class="my-4 text-center text-muted">OR</div>
-									<div class="text-center">
-										<button class="btn btn-linkedin btn-block btn-lg">SIGN IN WITH LINKEDIN</button>
-									</div>
-								</form>
-							</div>
-					      </div>
-					      <div class="modal-footer" style="margin-right: 15%;">
-					        <p class="text-center text-white">Don't have an account? <a class="text-warning cursor-pointer" id="signup-link">Sign up Now</a></p>
-					      </div>
-					    </div>
-					  </div>
-					</div>
-					<!-- Modal For Login -->
+						 <!-- Modal For Login -->
+						<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content bg-nude" style="width: 80%; margin: 0 auto;">
+						      <div class="modal-header">
+						        <h5 class="modal-title text-center text-white login-modal" id="login">Login</h5>
+						        <button type="button" class="close text-white login-btn" data-dismiss="modal" aria-label="Close">
+						          <span class="mdi mdi-close"></span>
+						        </button>
+						      </div>
+						      <div class="modal-body bg-light">
+						        <div class="container-fluid text-danger">
+								    <form class="px-4 py-3">
+										<div class="form-group">
+										    <input type="email" class="form-control" id="email1" aria-describedby="emailHelp" placeholder="Email">
+									  	</div>
+									    <div class="form-group">
+										    <input type="password" class="form-control" id="password1" placeholder="Password">
+										</div>
+										<p><a href="">Forgot Password</a></p>
+										<div class="text-center">
+											<button class="btn btn-success btn-block btn-lg">LOG IN</button>
+										</div>
+										<div class="my-4 text-center text-muted">OR</div>
+										<div class="text-center">
+											<button class="btn btn-linkedin btn-block btn-lg">SIGN IN WITH LINKEDIN</button>
+										</div>
+									</form>
+								</div>
+						      </div>
+						      <div class="modal-footer" style="margin-right: 15%;">
+						        <p class="text-center text-white">Don't have an account? <a class="text-warning cursor-pointer" id="signup-link">Sign up Now</a></p>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+						<!-- Modal For Login -->
 
-					<!-- Modal For SignUp -->
-					<div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="signup" aria-hidden="true">
-					  <div class="modal-dialog" role="document">
-					    <div class="modal-content bg-nude" style="width: 80%; margin: 0 auto;">
-					      <div class="modal-header">
-					        <h5 class="modal-title text-center text-white login-modal" id="signup">SignUp</h5>
-					        <button type="button" class="close text-white login-btn" data-dismiss="modal" aria-label="Close">
-					          <span class="mdi mdi-close"></span>
-					        </button>
-					      </div>
-					      <div class="modal-body bg-light">
-					        <div class="container-fluid text-danger">
-							    <form class="px-4 py-3">
-								    <div class="form-group">
-									    <input type="text" class="form-control" id="name2" placeholder="Name">
-									</div>
-									<div class="form-group">
-									    <input type="email" class="form-control" id="email2" aria-describedby="emailHelp" placeholder="Email">
-									</div>
-									<div class="form-group">
-									    <input id="phone2" type="tel" name = "phone_number" class="form-control phone" style="background:#fff" >
-									</div>
-									<div class="form-group">
-									    <input type="password" class="form-control" id="password2" placeholder="Password">
-									</div>
-									<div class="form-group">
-									    <input type="password" class="form-control" id="confirm" placeholder="Confirm Password">
-									</div>
-									<div class="text-center">
-										<button class="btn btn-success btn-block btn-lg">SIGN UP</button>
-									</div>
-									<div class="my-3 text-center text-muted">OR</div>
-									<div class="text-center">
-										<button class="btn btn-linkedin btn-block btn-lg">SIGN UP WITH LINKEDIN</button>
-									</div>
-								</form>
-							</div>
-					      </div>
-					      <div class="modal-footer" style="margin-right: 15%;">
-					        <p class="text-center text-white">Alraedy have an account? <a class="text-warning cursor-pointer" id="login-link">Login</a></p>
-					      </div>
-					    </div>
-					  </div>
-					</div>
-					<!-- Modal For SignUp -->
+						<!-- Modal For SignUp -->
+						<div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="signup" aria-hidden="true">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content bg-nude" style="width: 80%; margin: 0 auto;">
+						      <div class="modal-header">
+						        <h5 class="modal-title text-center text-white login-modal" id="signup">SignUp</h5>
+						        <button type="button" class="close text-white login-btn" data-dismiss="modal" aria-label="Close">
+						          <span class="mdi mdi-close"></span>
+						        </button>
+						      </div>
+						      <div class="modal-body bg-light">
+						        <div class="container-fluid text-danger">
+								    <form class="px-4 py-3">
+									    <div class="form-group">
+										    <input type="text" class="form-control" id="name2" placeholder="Name">
+										</div>
+										<div class="form-group">
+										    <input type="email" class="form-control" id="email2" aria-describedby="emailHelp" placeholder="Email">
+										</div>
+										<div class="form-group">
+										    <input id="phone2" type="tel" name = "phone_number" class="form-control phone" style="background:#fff" >
+										</div>
+										<div class="form-group">
+										    <select class="form-control" id="Gender">
+										      	<option value="male">Male</option>
+										      	<option value="female">Female</option>
+										    </select>
+										</div>
+										<div class="form-group">
+										    <input type="password" class="form-control" id="password2" placeholder="Password">
+										</div>
+										<div class="form-group">
+										    <input type="password" class="form-control" id="confirm" placeholder="Confirm Password">
+										</div>
+										<div class="text-center">
+											<button class="btn btn-success btn-block btn-lg">SIGN UP</button>
+										</div>
+										<div class="my-3 text-center text-muted">OR</div>
+										<div class="text-center">
+											<button class="btn btn-linkedin btn-block btn-lg">SIGN UP WITH LINKEDIN</button>
+										</div>
+									</form>
+								</div>
+						      </div>
+						      <div class="modal-footer" style="margin-right: 15%;">
+						        <p class="text-center text-white">Already have an account? <a class="text-warning cursor-pointer" id="login-link">Login</a></p>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+						<!-- Modal For SignUp -->
 
-				 </ul>
-			 </div>
+					 </ul>
+				 </div>
+			</div>
 		</nav><!--Navigation-->
 
 		<section class="banner">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-10">
-						<h1 class="text-white banner-heading">E-Learning. For Nigeria.</h1>
-						<h5 class="text-white fw-200 banner-sub-heading">Powering affordable e-learning infrastructure <span class="period">.</span> For professionals and organisations.</h5>
+						<h1 class="text-white banner-heading">E-Learning For Nigeria</h1>
+						<h5 class="text-white fw-200 banner-sub-heading mt-5">Powering affordable e-learning infrastructure for professionals and organisations.</h5>
 					</div>
 				</div>
 			</div>
@@ -225,7 +232,7 @@
 					  	<div class="cert-cover ican">
 					  		<i class="mdi mdi-light mdi-certificate "></i>
 					  	</div>
-					  	<p class="font-weight-bold p-2">Ican Skils</p>
+					  	<p class="font-weight-bold p-2">Technology</p>
 					  	<span class="text-muted p-2">6 courses</span>
 					  </div>
 					</div>
@@ -297,6 +304,8 @@
 					</div>
 
 				</div>
+
+				<a href="courses.html" class="btn btn-primary text-center d-block mt-5" style="margin: 0 auto;width: 120px">All Courses</a>
 			</div>
 		</section><!-- faetured courses-->
 
@@ -380,23 +389,20 @@
 					<div class="col-6 col-sm-6 col-lg-2 links">
 					  <h5>Company</h5>
 					  <ul>
-					  	<li><a href="">About us</a></li>
-					  	<li><a href="">Our team</a></li>
-					  	<li><a href="">Careers</a></li> 
+					  	<li><a href="about.html">About us</a></li>
+					  	<li><a href="team.html">Our team</a></li>
 					  </ul>	
 					</div>
 					<div class="col-6 col-sm-6 col-lg-3 links">
 					  <h5>Work with us</h5>
 					  <ul>
-					  	<li><a href="">Become an instructor</a></li>
-					  	<li><a href="">Become an affiliate</a></li>
+					  	<li><a href="become.html">Become an instructor</a></li>
 					  </ul>	
 					</div>
 					<div class="col-6 col-sm-6 col-lg-2 links">
 					  <h5>For Businesses</h5>
 					  <ul>
-					  	<li><a href="">Corporate training</a></li>
-					  	<li><a href="">Resellers</a></li>
+					  	<li><a href="corporate.html">Corporate training</a></li>
 					  </ul>		
 					</div>
 					<div class="col-6 col-sm-6 col-lg-2 links">
@@ -416,16 +422,16 @@
 
 				<div class="row pb-3">
 					<div class="col-6 col-lg-2 offset-lg-2 terms">
-					  <a href="">Terms of Use</a>	
+					  <a href="terms.html">Terms of Use</a>	
 					</div>
 					<div class="col-6 col-lg-2 terms">
-					  <a href=""> Privacy Policy </a>	
+					  <a href="terms.html"> Privacy Policy </a>	
 					</div>
 					<div class="col-6 col-lg-2 terms">
-					  <a href=""> Refund Policy </a>	
+					  <a href="terms.html"> Refund Policy </a>	
 					</div>
 					<div class="col-6 col-lg-2 terms last">
-					  <a href=""> Reschedule Policy</a>	
+					  <a href="terms.html"> Reschedule Policy</a>	
 					</div>
 				</div>
 			</div>
@@ -434,10 +440,7 @@
 		<footer class="sub">
 			<div class="container">
 				<div class="row sub-links">
-					<div class="col-2 col-md-3">
-					  <a href="" class="btn"><i class="mdi mdi-lifebuoy"></i><span class="d-none d-sm-inline" >Help<span class="d-none d-md-inline"> and Support</span></span></a>
-					</div>
-					<div class="col-2 col-md-3">
+					<div class="col-2 col-md-5">
 						<div class="btn-group dropup">
 						  	<a href="" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-cellphone-wireless"></i><span class="d-none d-sm-inline">Request<span class="d-none d-md-inline"> a callback</span></span></a>
 						  	<div class="callback dropdown-menu">
@@ -460,10 +463,10 @@
 									    <label for="reason">Reason for contact</label>
 									    <select class="form-control" id="reason">
 									      	<option value="services">Services</option>
-				                            <option value="services">In house training</option>
-				                            <option value="services">Corporate Licence</option>
-				                            <option value="services">Content partnership</option>
-				                            <option value="payment">payment Options</option>
+				                            <option value="in-house">In house training</option>
+				                            <option value="lms-deployment">Lms deployment content digitization</option>
+				                            <option value="partnership">Partnership</option>
+				                            <option value="payment">Payment options</option>
 				                            <option value="certification">Certification</option>
 				                            <option value="become_trainer">Become a Trainer</option>
 									    </select>
@@ -474,16 +477,22 @@
 						</div>
 					</div>
 					<div class="col-2 col-md-3">
-					  <a href="" class="btn"><i class="mdi mdi-phone"></i><span class="d-none d-sm-inline">Call us<span class="d-none d-md-inline">: +2348073914547</span></span></a>
+					  	<a href="" class="btn"><i class="mdi mdi-phone"></i><span class="d-none d-sm-inline">Call us<span class="d-none d-md-inline">: +2348073914547</span></span></a>
 					</div>
-					<div class="col-5 col-md-3">
-					  <a href="" class="btn chat float-right"><i class="mdi mdi-message-settings"></i>Live Chat</a>
+					<div class="col-5 col-md-4">
+					  	<a href="" class="btn chat float-right"><i class="mdi mdi-message-settings"></i>Live Chat</a>
 					</div>
 				</div>
 			</div>
 		</footer>
 
 		<!-- build:js -->
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="assets/js/dcalendar.picker.js"></script>
+		<script>
+			$('#demo').dcalendarpicker();
+			$('#calendar-demo').dcalendar(); //creates the calendar
+		</script>
 		<script src="assets/js/main.js"></script>
 		 <!-- endbuild -->
 
@@ -495,7 +504,6 @@
 		<script src="assets/js/intlTelInput.js"></script>
 		<script src="assets/js/video.js"></script>
 		<script src="assets/js/nav.js"></script>
-		<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
 
 	</body>
 

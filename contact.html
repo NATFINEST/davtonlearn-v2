@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="description" content="This is a boilerplate for a Bootstrap 4.1.1 project">
+		<meta name="keywords" content="HTML, CSS, JS, Sass, JavaScript, framework, bootstrap, front-end, frontend, web development">
+		<meta name="author" content="Henrik H. Boelsmand">
+		<title>Davtonlearn 2.0</title>
+		<link rel="shortcut icon" href="assets/img/favicon.png">
+
+		<!-- build:css -->
+		<link rel="stylesheet" href="assets/css/main.css">
+		<!-- endbuild -->
+
+		<!-- material design icons -->
+	    <link href="assets/css/materialdesignicons.css" media="all" rel="stylesheet" type="text/css" />
+	    <!-- material design icons -->
+    
+	    <!--Simp Font -->
+	    <link rel="stylesheet" href="assets/css/simp.css">
+	    <!-- Simp Font -->
+
+    	<link rel="stylesheet" href="assets/css/intlTelInput.css">
+    	<link rel="stylesheet" href="assets/css/nav.css">
+    	<link rel="stylesheet" href="assets/css/dcalendar.picker.css">
+
+		<!-- style:css -->
+		<link rel="stylesheet" href="assets/css/style.css">
+		<!-- endbuild -->
+	</head>
+
+	<body>
+		<div class="ad">
+			<div class="container">
+				<div class="row text-center">
+					<a class="close text-white pt-4 mr-2" id="hide"><i class="mdi mdi-close"></i></a>
+					<div class="col-3 d-none d-md-block col-md-3 offset-md-0 col-lg-2 text-right offset-lg-2">
+						<span class="ad-20">20</span>
+						<div class="ad-table"><span class="ad-percent">%</span><span class="ad-off">off</span></div>
+					</div>
+					<div class="col-6 col-lg-3 text-left">
+						Enroll before July 16<span class="ad-th">th</span> and save up to 20% on our top courses
+					</div>
+					<div class="col-3 col-md-1 col-lg-2 text-left">
+						<button class="btn btn-primary ad-btn mt-sm-2 mt-md-4" data-toggle="modal" data-target="#advert">LEARN MORE</button>
+					</div>
+					<!-- Modal For Advert -->
+					<div class="modal fade" id="advert" tabindex="-1" role="dialog" aria-labelledby="advert" aria-hidden="true">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header bg-danger">
+					        <h5 class="modal-title" id="advert">Discount on courses</h5>
+					        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					        <div class="container-fluid text-danger">
+							    <div class="row">
+							    	<h4 class=" my-4">Enjoy amazing discount on popular courses</h4>
+								    <div class="col-md-6 ad-discount">Use coupon code<br> <h5 class="mt-3">XMAS50</h5> <br> to enjoy 50% discount</div>
+								    <div class="col-md-6 ad-discount">Use coupon code<br> <h5 class="mt-3">DAV50</h5> <br> to enjoy 30% discount</div>
+							    </div>
+							</div>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+					<!-- Modal For Advert -->
+				</div>
+			</div>
+		</div><!--advert section-->
+
+		<nav class="navbar navbar-expand-md navbar-light bg-default">
+
+			<div class="container">
+				<a class="navbar-brand float-left" href="."><img src="assets/img/logo.png"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+					 <span class="navbar-toggler-icon"></span>
+				 </button>
+
+				 <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+					 <ul class="navbar-nav ml-auto">
+						 <li class="nav-item">
+							 <a class="nav-link ml-2 lms cursor-pointer" data-toggle="modal" data-target="#signup">Sign Up</a>
+						 </li>
+						 <li class="nav-item">
+							 <a class="nav-link ml-4 btn btn-login" data-toggle="modal" data-target="#login">Login</a>
+						 </li>
+
+						 <!-- Modal For Login -->
+						<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content bg-nude" style="width: 80%; margin: 0 auto;">
+						      <div class="modal-header">
+						        <h5 class="modal-title text-center text-white login-modal" id="login">Login</h5>
+						        <button type="button" class="close text-white login-btn" data-dismiss="modal" aria-label="Close">
+						          <span class="mdi mdi-close"></span>
+						        </button>
+						      </div>
+						      <div class="modal-body bg-light">
+						        <div class="container-fluid text-danger">
+								    <form class="px-4 py-3">
+										<div class="form-group">
+										    <input type="email" class="form-control" id="email1" aria-describedby="emailHelp" placeholder="Email">
+									  	</div>
+									    <div class="form-group">
+										    <input type="password" class="form-control" id="password1" placeholder="Password">
+										</div>
+										<p><a href="">Forgot Password</a></p>
+										<div class="text-center">
+											<button class="btn btn-success btn-block btn-lg">LOG IN</button>
+										</div>
+										<div class="my-4 text-center text-muted">OR</div>
+										<div class="text-center">
+											<button class="btn btn-linkedin btn-block btn-lg">SIGN IN WITH LINKEDIN</button>
+										</div>
+									</form>
+								</div>
+						      </div>
+						      <div class="modal-footer" style="margin-right: 15%;">
+						        <p class="text-center text-white">Don't have an account? <a class="text-warning cursor-pointer" id="signup-link">Sign up Now</a></p>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+						<!-- Modal For Login -->
+
+						<!-- Modal For SignUp -->
+						<div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="signup" aria-hidden="true">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content bg-nude" style="width: 80%; margin: 0 auto;">
+						      <div class="modal-header">
+						        <h5 class="modal-title text-center text-white login-modal" id="signup">SignUp</h5>
+						        <button type="button" class="close text-white login-btn" data-dismiss="modal" aria-label="Close">
+						          <span class="mdi mdi-close"></span>
+						        </button>
+						      </div>
+						      <div class="modal-body bg-light">
+						        <div class="container-fluid text-danger">
+								    <form class="px-4 py-3">
+									    <div class="form-group">
+										    <input type="text" class="form-control" id="name2" placeholder="Name">
+										</div>
+										<div class="form-group">
+										    <input type="email" class="form-control" id="email2" aria-describedby="emailHelp" placeholder="Email">
+										</div>
+										<div class="form-group">
+										    <input id="phone2" type="tel" name = "phone_number" class="form-control phone" style="background:#fff" >
+										</div>
+										<div class="form-group">
+										    <select class="form-control" id="Gender">
+										      	<option value="male">Male</option>
+										      	<option value="female">Female</option>
+										    </select>
+										</div>
+										<div class="form-group">
+										    <input type="password" class="form-control" id="password2" placeholder="Password">
+										</div>
+										<div class="form-group">
+										    <input type="password" class="form-control" id="confirm" placeholder="Confirm Password">
+										</div>
+										<div class="text-center">
+											<button class="btn btn-success btn-block btn-lg">SIGN UP</button>
+										</div>
+										<div class="my-3 text-center text-muted">OR</div>
+										<div class="text-center">
+											<button class="btn btn-linkedin btn-block btn-lg">SIGN UP WITH LINKEDIN</button>
+										</div>
+									</form>
+								</div>
+						      </div>
+						      <div class="modal-footer" style="margin-right: 15%;">
+						        <p class="text-center text-white">Already have an account? <a class="text-warning cursor-pointer" id="login-link">Login</a></p>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+						<!-- Modal For SignUp -->
+
+					 </ul>
+				 </div>
+			</div>
+		</nav><!--Navigation-->
+
+		<section class="banner about">
+			<h1 class="fw-400">Contact Davtonlearn</h1>
+		</section><!--banner about-->
+
+		<section class="py-5">
+			<div class="container">
+				<div class="row">
+					<ul class="nav nav-tabs col-sm-4 col-md-3" id="myTab" role="tablist">
+					  	<li class="nav-item">
+					    	<a class="nav-link active" data-toggle="tab" href="#profile" role="tab" aria-controls="profile">Profile</a>
+					  	</li>
+					  	<li class="nav-item">
+					    	<a class="nav-link" data-toggle="tab" href="#support" role="tab" aria-controls="support">Customer Support</a>
+					  	</li>
+					  	<li class="nav-item">
+					    	<a class="nav-link" data-toggle="tab" href="#service" role="tab" aria-controls="service">Service</a>
+					  	</li>
+					</ul>
+
+					<div class="tab-content col-sm-8 col-md-9">
+						<div class="tab-pane active" id="profile" role="tabpanel">
+						  	<b>How and where can I access the e-learning content?</b>
+						  	<p class="text-muted">Once you register and pay the course fee, you can have 24/7 access to the e-learning content on our website. An automated course purchase confirmation mail will guide you through the process.</p>
+						  	<hr size="3">
+
+						  	<b>How and where can I access the e-learning content?</b>
+						  	<p class="text-muted">Once you register and pay the course fee, you can have 24/7 access to the e-learning content on our website. An automated course purchase confirmation mail will guide you through the process.</p>
+						  	<hr size="3">
+
+						  	<b>What are available the modes of payment? Do I get a receipt for the same?</b>
+	                        <p class="text-muted">Payments can be made using:</p>
+	                        <p class="text-muted">A MasterCard</p>
+	                        <p class="text-muted">A receipt of the same will be issued to the participant automatically via email.</p>
+	                        <hr size="4">
+
+	                        <b>Can I cancel my enrollment? Do I get a refund?</b>
+	                        <p class="text-muted">
+	                            Yes, you can cancel your enrollment. We provide you complete refund after deducting the administration fee. To know more please go through our&nbsp;<a style="color:#080808;" href="terms.html">Refund Policy</a>.
+	                        </p>
+	                        <hr size="4">
+
+	                        <b>Do you provide a Money Back Guarantee for the training program?</b>
+	                        <p class="text-muted">
+	                            We do provide a Money Back Guarantee for few of the training programs. Contact <a style="color:#080808;" href="info@davtonlearn.com" color="">info@davtonlearn.com</a>&nbsp;for more information.
+	                        </p>
+	                        <hr size="4">
+
+	                        <b>Do you provide any group discounts for classroom training programs?</b>
+	                        <p class="text-muted">
+	                            Yes, we have group discount packages for boot camps and classroom training. Contact <a style="color:#080808;" href="info@davtonlearn.com">info@davtonlearn.com</a>  to know more about group discounts
+	                        </p>
+	                        <hr size="4">
+
+	                        <b>Is there any extra cost associated to attain PDUs apart from the course fee?</b>
+	                        <p class="text-muted">
+	                            No, there is no extra cost associated in attaining PDUs apart from the course fee.
+	                        </p>
+						</div>
+
+					  	<div class="tab-pane" id="support" role="tabpanel">
+					  		<b>What are the support options provided?</b>
+                            <p class="text-muted">
+                                You can contact us via Phone, Email, and Chat. To know more about contact options, visit the Contact Us&nbsp;page.
+                            </p>
+                            <hr size="4">
+
+                            <b>How can I extend the access period for my course?</b>
+                            <p class="text-muted">You can extend the access period by paying separately. Contact&nbsp;<a style="color:#080808;" href="info@davtonlearn.com">info@davtonlearn.com</a> for more information.</p>
+                            <hr size="4">
+
+                            <b>I am unable to access the online course. Who do I contact for a solution?</b>
+                            <p class="text-muted">Please send an email to&nbsp;<a style="color:#080808;" href="info@davtonlearn.com">info@davtonlearn.com</a>&nbsp;You can also chat with us to get an instant solution.
+                            </p>
+                            <p class="text-muted">Call us:&nbsp; +2348073914547</p>
+					  	</div>
+
+					  	<div class="tab-pane" id="service" role="tabpanel">
+					  		<b>Can Davtonlearn.com deliver a course on-site?</b>
+                            <p class="text-muted">
+                                If your company has a group of ten or more employees to train, we can schedule a private In-house training at your office. For more information, contact our Sales Team at <a style="color:#080808;" href="info@davtonlearn.com">info@davtonlearn.com</a> or call us.
+                            </p>
+                            <hr size="4">
+
+                            <b>I want Davtonlearn to conduct training at our office. </b>
+                            <p class="text-muted">Please connect with our Sales Team at&nbsp; info@davtonlearn.com&nbsp;to know more about organizing In-house trainings.</p>
+                            <hr size="4">
+
+                            <b>Can I become an affiliate with Davtonlearn?</b>
+                            <p class="text-muted">
+                                Yes, you can become an affiliate with Davtonlearn. To know more, please refer to our&nbsp;affiliate program.
+                            </p>
+					  	</div>
+					</div>
+
+				</div>
+			</div>
+		</section><!--banner intro-->
+
+		<footer class="main">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-6 col-lg-3 links follow">
+					  <h5>Follow us!</h5>
+					  <div class="container">
+						  <div class="row">
+	 							<a href="" class="col-4 col-md-2 mt-2 pl-0"><i class="btn btn-dark mdi mdi-facebook social facebook"></i></a>
+	 							<a href="" class="col-4 col-md-2 mt-2 pl-0"><i class="btn btn-dark mdi mdi-twitter social twitter"></i></a>
+	 							<a href="" class="col-4 col-md-2 mt-2 pl-0"><i class="btn btn-dark mdi mdi-youtube social youtube"></i></a>
+	 							<a href="" class="col-4 col-md-2 mt-2 pl-0"><i class="btn btn-dark mdi mdi-linkedin social linkedin"></i></a>
+	 							<a href="" class="col-4 col-md-2 mt-2 pl-0"><i class="btn btn-dark mdi mdi-google-plus social google"></i></a>
+	 						</div>
+	 					</div>
+					</div>
+					<div class="col-6 col-sm-6 col-lg-2 links">
+					  <h5>Company</h5>
+					  <ul>
+					  	<li><a href="about.html">About us</a></li>
+					  	<li><a href="team.html">Our team</a></li>
+					  </ul>	
+					</div>
+					<div class="col-6 col-sm-6 col-lg-3 links">
+					  <h5>Work with us</h5>
+					  <ul>
+					  	<li><a href="become.html">Become an instructor</a></li>
+					  </ul>	
+					</div>
+					<div class="col-6 col-sm-6 col-lg-2 links">
+					  <h5>For Businesses</h5>
+					  <ul>
+					  	<li><a href="corporate.html">Corporate training</a></li>
+					  </ul>		
+					</div>
+					<div class="col-6 col-sm-6 col-lg-2 links">
+					  <h5>Our Partner</h5>
+					  <img src="assets/img/aep-logo.png">	
+					</div>
+					<!--
+					<div class="col-12 col-sm-4 col-lg-2 links learn">
+					  <h5>Learn On the Go!</h5>
+					  <ul>
+					  	<li><a href="" class="btn btn-outline-light w-100"><i class="mdi mdi-android"></i> <span>Get the andriod app</span> </a></li>
+					  	<li><a href="" class="btn btn-outline-light w-100"><i class="mdi mdi-apple"></i> <span>Get the ios app</span></a></li>
+					  </ul>		
+					</div>
+				-->
+				</div>
+
+				<div class="row pb-3">
+					<div class="col-6 col-lg-2 offset-lg-2 terms">
+					  <a href="terms.html">Terms of Use</a>	
+					</div>
+					<div class="col-6 col-lg-2 terms">
+					  <a href="terms.html"> Privacy Policy </a>	
+					</div>
+					<div class="col-6 col-lg-2 terms">
+					  <a href="terms.html"> Refund Policy </a>	
+					</div>
+					<div class="col-6 col-lg-2 terms last">
+					  <a href="terms.html"> Reschedule Policy</a>	
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<footer class="sub">
+			<div class="container">
+				<div class="row sub-links">
+					<div class="col-2 col-md-5">
+						<div class="btn-group dropup">
+						  	<a href="" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-cellphone-wireless"></i><span class="d-none d-sm-inline">Request<span class="d-none d-md-inline"> a callback</span></span></a>
+						  	<div class="callback dropdown-menu">
+						  		<header class="request cursor-pointer">
+						  			<button type="button" class="close text-white mt-2 mr-2" data-dismiss="modal">&times;</button>
+						  			<h4 class="modal-title pr-4"><i class="mdi mdi-cellphone-wireless"></i> REQUEST A CALLBACK</h4>
+						  		</header>
+						  		<p class="px-4 pt-2 text-center">Leave your details and Our training consultant will get back to you</p>
+								<form class="px-4 py-3">
+								    <div class="form-group">
+									    <input type="text" class="form-control" id="name3" placeholder="Name">
+									  </div>
+									  <div class="form-group">
+									    <input type="email" class="form-control" id="email3" aria-describedby="emailHelp" placeholder="Email">
+									  </div>
+									  <div class="form-group">
+									    <input id="phone3" type="tel" name = "phone_number" class="form-control phone" style="background:#fff" >
+									  </div>
+									  <div class="form-group">
+									    <label for="reason">Reason for contact</label>
+									    <select class="form-control" id="reason">
+									      	<option value="services">Services</option>
+				                            <option value="in-house">In house training</option>
+				                            <option value="lms-deployment">Lms deployment content digitization</option>
+				                            <option value="partnership">Partnership</option>
+				                            <option value="payment">Payment options</option>
+				                            <option value="certification">Certification</option>
+				                            <option value="become_trainer">Become a Trainer</option>
+									    </select>
+									  </div>
+									  <button type="submit" class="btn btn-primary">Submit</button>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col-2 col-md-3">
+					  	<a href="" class="btn"><i class="mdi mdi-phone"></i><span class="d-none d-sm-inline">Call us<span class="d-none d-md-inline">: +2348073914547</span></span></a>
+					</div>
+					<div class="col-5 col-md-4">
+					  	<a href="" class="btn chat float-right"><i class="mdi mdi-message-settings"></i>Live Chat</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- build:js -->
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="assets/js/dcalendar.picker.js"></script>
+		<script>
+			$('#demo').dcalendarpicker();
+			$('#calendar-demo').dcalendar(); //creates the calendar
+		</script>
+		<script src="assets/js/main.js"></script>
+		 <!-- endbuild -->
+
+		<script src="assets/js/category-filter.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.ellipsis.js"></script>
+		<script type="text/javascript">$(".ellipsis").ellipsis();</script>
+		<script type="text/javascript">$('.category-filter .category-button').categoryFilter();</script>
+		<script src="assets/js/jquery.singlePageNav.js"></script>
+		<script src="assets/js/intlTelInput.js"></script>
+		<script src="assets/js/video.js"></script>
+		<script src="assets/js/nav.js"></script>
+
+	</body>
+
+</html>

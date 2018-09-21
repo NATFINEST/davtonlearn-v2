@@ -15,16 +15,16 @@
 		<!-- endbuild -->
 
 		<!-- material design icons -->
-    <link href="assets/css/materialdesignicons.css" media="all" rel="stylesheet" type="text/css" />
-    <!-- material design icons -->
+	    <link href="assets/css/materialdesignicons.css" media="all" rel="stylesheet" type="text/css" />
+	    <!-- material design icons -->
     
-    <!--Simp Font -->
-    <link rel="stylesheet" href="assets/css/simp.css">
-    <!-- Simp Font -->
+	    <!--Simp Font -->
+	    <link rel="stylesheet" href="assets/css/simp.css">
+	    <!-- Simp Font -->
 
-    <link rel="stylesheet" href="assets/css/intlTelInput.css">
-
-    <link rel="stylesheet" href="assets/css/nav.css">
+    	<link rel="stylesheet" href="assets/css/intlTelInput.css">
+    	<link rel="stylesheet" href="assets/css/nav.css">
+    	<link rel="stylesheet" href="assets/css/dcalendar.picker.css">
 
 		<!-- style:css -->
 		<link rel="stylesheet" href="assets/css/style.css">
@@ -32,111 +32,116 @@
 	</head>
 
 	<body>
-		<nav class="navbar navbar-expand-md navbar-light bg-default container">
+		<nav class="navbar navbar-expand-md navbar-light bg-default">
 
-			 <a class="navbar-brand float-left" href="."><img src="assets/img/logo.png"></a>
-			 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-				 <span class="navbar-toggler-icon"></span>
-			 </button>
+			<div class="container">
+				<a class="navbar-brand float-left" href="."><img src="assets/img/logo.png"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+					 <span class="navbar-toggler-icon"></span>
+				 </button>
 
-			 <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-				 <ul class="navbar-nav ml-auto">
-					 <li class="nav-item">
-						 <a class="nav-link ml-2 lms" href="#">LMS:Education</a>
-					 </li>
-					 <li class="nav-item">
-						 <a class="nav-link ml-2 lms" href="#">LMS:Corporate</a>
-					 </li>
-					 <li class="nav-item">
-						 <a class="nav-link ml-4 btn btn-login" data-toggle="modal" data-target="#login">Login</a>
-					 </li>
+				 <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+					 <ul class="navbar-nav ml-auto">
+						 <li class="nav-item">
+							 <a class="nav-link ml-2 lms cursor-pointer" data-toggle="modal" data-target="#signup">Sign Up</a>
+						 </li>
+						 <li class="nav-item">
+							 <a class="nav-link ml-4 btn btn-login" data-toggle="modal" data-target="#login">Login</a>
+						 </li>
 
-					 <!-- Modal For Login -->
-					<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
-					  <div class="modal-dialog" role="document">
-					    <div class="modal-content bg-nude" style="width: 80%; margin: 0 auto;">
-					      <div class="modal-header">
-					        <h5 class="modal-title text-center text-white login-modal" id="login">Login</h5>
-					        <button type="button" class="close text-white login-btn" data-dismiss="modal" aria-label="Close">
-					          <span class="mdi mdi-close"></span>
-					        </button>
-					      </div>
-					      <div class="modal-body bg-light">
-					        <div class="container-fluid text-danger">
-							    <form class="px-4 py-3">
-									<div class="form-group">
-									    <input type="email" class="form-control" id="email1" aria-describedby="emailHelp" placeholder="Email">
-								  	</div>
-								    <div class="form-group">
-									    <input type="password" class="form-control" id="password1" placeholder="Password">
-									</div>
-									<p><a href="">Forgot Password</a></p>
-									<div class="text-center">
-										<button class="btn btn-success btn-block btn-lg">LOG IN</button>
-									</div>
-									<div class="my-4 text-center text-muted">OR</div>
-									<div class="text-center">
-										<button class="btn btn-linkedin btn-block btn-lg">SIGN IN WITH LINKEDIN</button>
-									</div>
-								</form>
-							</div>
-					      </div>
-					      <div class="modal-footer" style="margin-right: 15%;">
-					        <p class="text-center text-white">Don't have an account? <a class="text-warning cursor-pointer" id="signup-link">Sign up Now</a></p>
-					      </div>
-					    </div>
-					  </div>
-					</div>
-					<!-- Modal For Login -->
+						 <!-- Modal For Login -->
+						<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content bg-nude" style="width: 80%; margin: 0 auto;">
+						      <div class="modal-header">
+						        <h5 class="modal-title text-center text-white login-modal" id="login">Login</h5>
+						        <button type="button" class="close text-white login-btn" data-dismiss="modal" aria-label="Close">
+						          <span class="mdi mdi-close"></span>
+						        </button>
+						      </div>
+						      <div class="modal-body bg-light">
+						        <div class="container-fluid text-danger">
+								    <form class="px-4 py-3">
+										<div class="form-group">
+										    <input type="email" class="form-control" id="email1" aria-describedby="emailHelp" placeholder="Email">
+									  	</div>
+									    <div class="form-group">
+										    <input type="password" class="form-control" id="password1" placeholder="Password">
+										</div>
+										<p><a href="">Forgot Password</a></p>
+										<div class="text-center">
+											<button class="btn btn-success btn-block btn-lg">LOG IN</button>
+										</div>
+										<div class="my-4 text-center text-muted">OR</div>
+										<div class="text-center">
+											<button class="btn btn-linkedin btn-block btn-lg">SIGN IN WITH LINKEDIN</button>
+										</div>
+									</form>
+								</div>
+						      </div>
+						      <div class="modal-footer" style="margin-right: 15%;">
+						        <p class="text-center text-white">Don't have an account? <a class="text-warning cursor-pointer" id="signup-link">Sign up Now</a></p>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+						<!-- Modal For Login -->
 
-					<!-- Modal For SignUp -->
-					<div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="signup" aria-hidden="true">
-					  <div class="modal-dialog" role="document">
-					    <div class="modal-content bg-nude" style="width: 80%; margin: 0 auto;">
-					      <div class="modal-header">
-					        <h5 class="modal-title text-center text-white login-modal" id="signup">SignUp</h5>
-					        <button type="button" class="close text-white login-btn" data-dismiss="modal" aria-label="Close">
-					          <span class="mdi mdi-close"></span>
-					        </button>
-					      </div>
-					      <div class="modal-body bg-light">
-					        <div class="container-fluid text-danger">
-							    <form class="px-4 py-3">
-								    <div class="form-group">
-									    <input type="text" class="form-control" id="name2" placeholder="Name">
-									</div>
-									<div class="form-group">
-									    <input type="email" class="form-control" id="email2" aria-describedby="emailHelp" placeholder="Email">
-									</div>
-									<div class="form-group">
-									    <input id="phone2" type="tel" name = "phone_number" class="form-control" style="background:#fff" >
-									</div>
-									<div class="form-group">
-									    <input type="password" class="form-control" id="password" placeholder="Password">
-									</div>
-									<div class="form-group">
-									    <input type="password" class="form-control" id="confirm" placeholder="Confirm Password">
-									</div>
-									<div class="text-center">
-										<button class="btn btn-success btn-block btn-lg">SIGN UP</button>
-									</div>
-									<div class="my-3 text-center text-muted">OR</div>
-									<div class="text-center">
-										<button class="btn btn-linkedin btn-block btn-lg">SIGN UP WITH LINKEDIN</button>
-									</div>
-								</form>
-							</div>
-					      </div>
-					      <div class="modal-footer" style="margin-right: 15%;">
-					        <p class="text-center text-white">Alraedy have an account? <a class="text-warning cursor-pointer" id="login-link">Login</a></p>
-					      </div>
-					    </div>
-					  </div>
-					</div>
-					<!-- Modal For SignUp -->
+						<!-- Modal For SignUp -->
+						<div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="signup" aria-hidden="true">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content bg-nude" style="width: 80%; margin: 0 auto;">
+						      <div class="modal-header">
+						        <h5 class="modal-title text-center text-white login-modal" id="signup">SignUp</h5>
+						        <button type="button" class="close text-white login-btn" data-dismiss="modal" aria-label="Close">
+						          <span class="mdi mdi-close"></span>
+						        </button>
+						      </div>
+						      <div class="modal-body bg-light">
+						        <div class="container-fluid text-danger">
+								    <form class="px-4 py-3">
+									    <div class="form-group">
+										    <input type="text" class="form-control" id="name2" placeholder="Name">
+										</div>
+										<div class="form-group">
+										    <input type="email" class="form-control" id="email2" aria-describedby="emailHelp" placeholder="Email">
+										</div>
+										<div class="form-group">
+										    <input id="phone2" type="tel" name = "phone_number" class="form-control phone" style="background:#fff" >
+										</div>
+										<div class="form-group">
+										    <select class="form-control" id="Gender">
+										      	<option value="male">Male</option>
+										      	<option value="female">Female</option>
+										    </select>
+										</div>
+										<div class="form-group">
+										    <input type="password" class="form-control" id="password2" placeholder="Password">
+										</div>
+										<div class="form-group">
+										    <input type="password" class="form-control" id="confirm" placeholder="Confirm Password">
+										</div>
+										<div class="text-center">
+											<button class="btn btn-success btn-block btn-lg">SIGN UP</button>
+										</div>
+										<div class="my-3 text-center text-muted">OR</div>
+										<div class="text-center">
+											<button class="btn btn-linkedin btn-block btn-lg">SIGN UP WITH LINKEDIN</button>
+										</div>
+									</form>
+								</div>
+						      </div>
+						      <div class="modal-footer" style="margin-right: 15%;">
+						        <p class="text-center text-white">Already have an account? <a class="text-warning cursor-pointer" id="login-link">Login</a></p>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+						<!-- Modal For SignUp -->
 
-				 </ul>
-			 </div>
+					 </ul>
+				 </div>
+			</div>
 		</nav><!--Navigation-->
 
 		<nav aria-label="breadcrumb" role="navigation">
@@ -155,8 +160,7 @@
 						<p class="text-white">The PMP certification is the global gold standard for project management professionals.Keep abreast of the changes in the project management practices updated in PMBOK guide - 6th edition and pass the PMP® exam on your first attempt with Simplilearn’s PMP new course. The course covers new trends, emerging practices, tailoring considerations, and has a greater emphasis on strategic and business knowledge and a new section on the role of the project manager.</p>
 					</div>
 					<div class="col-md-4">
-						<p><img data-video="mzaHUC3WlAw" alt="Play this video" src="http://i3.ytimg.com/vi/wkLu5s9GluE/hqdefault.jpg" width="100%" height="250"></p>
-						<i class="mdi mdi-play-circle-outline text-danger" style="position: absolute;top: 30%;left: 45%;font-size: 70px;"></i>
+						<p><img class="cursor-pointer"  data-video="mzaHUC3WlAw" alt="Play this video" src="http://i3.ytimg.com/vi/wkLu5s9GluE/hqdefault.jpg" width="100%" height="250"></p>
 					</div>
 				</div>
 			</div>
@@ -169,7 +173,7 @@
 				<li><a href="#exam">Exam & Certification</a></li>
 				<li><a href="#faq">FAQs</a></li>
 				<li><a href="#reviews">Review</a></li>
-				<li><a href="" class="btn btn-primary text-white btn-block btn-enroll" id="enroll">Enroll Now</a></li>
+				<li><a href="plan.html" class="btn btn-primary text-white btn-block btn-enroll" id="enroll">Enroll Now</a></li>
 			</ul>
 		</div>
 
@@ -221,7 +225,7 @@
 							  	<h2>Course Description</h2>
 							  	
 							  	<div id="accordion">
-							      	<div class="card">
+							      	<div class="card course">
 							        	<div class="card-header">
 							  				<a class="card-link" data-toggle="collapse"  href="#menuone" aria-expanded="false" aria-controls="menuone">
 							  					What is PMP Certification?
@@ -237,7 +241,7 @@
 						        		</div>
 							      	</div>
 
-							      	<div class="card">
+							      	<div class="card course">
 							        	<div class="card-header">
 							  				<a class="card-link" data-toggle="collapse"  href="#menutwo" aria-expanded="false" aria-controls="menutwo">
 							  					What are the course objectives?
@@ -262,7 +266,7 @@
 							  	<h2>Exam & certification</h2>
 							  	<div id="accordion">
 
-							      	<div class="card">
+							      	<div class="card course">
 							        	<div class="card-header">
 							  				<a class="card-link" data-toggle="collapse"  href="#examone" aria-expanded="false" aria-controls="examone">
 							  					What are the PMP Certification eligibility requirements?
@@ -300,7 +304,7 @@
 						        		</div>
 							      	</div>
 
-							      	<div class="card">
+							      	<div class="card course">
 							        	<div class="card-header">
 							  				<a class="card-link" data-toggle="collapse"  href="#examtwo" aria-expanded="false" aria-controls="examtwo">
 							  					What are the PMP Certification Exam fees?
@@ -325,7 +329,7 @@
 							  	<h2>FAQ</h2>
 							  	
 							  	<div id="accordion">
-							      	<div class="card">
+							      	<div class="card course">
 							        	<div class="card-header">
 							  				<a class="card-link" data-toggle="collapse"  href="#faqone" aria-expanded="false" aria-controls="faqone">
 							  					Does the course fee include the examination fee as well?
@@ -340,10 +344,10 @@
 						        		</div>
 							      	</div>
 
-							      	<div class="card">
+							      	<div class="card course">
 							        	<div class="card-header">
 							  				<a class="card-link" data-toggle="collapse"  href="#faqtwo" aria-expanded="false" aria-controls="faqtwo">
-							  					Do you provide money back guarantee for the training programs?
+							  					<span>Do you provide money back guarantee for the training programs?</span>
 							  					<span class="collapsed"><p class="p"><b class="text-dark"><i class="mdi mdi-arrow-collapse-down"></i></b></p></span>
 												<span class="expanded"><p class="p"><b class="text-dark"><i class="mdi mdi-arrow-collapse-up"></i></b></p></span>
 											</a>
@@ -363,11 +367,11 @@
 							<!--Reviews-->
 							<div class="title">
 							  	<h2>Reviews</h2>
-							  	<div class="card">
+							  	<div class="card course">
 								    <div class="card-body">
 								        <div class="row">
 							        	    <div class="col-md-2">
-							        	        <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"/>
+							        	        <img src="assets/img/tobi.jpg" class="img img-rounded img-fluid"/>
 							        	        <p class="text-secondary text-center"><i class="text-primary mdi mdi-36px mdi mdi-linkedin-box"></i></p>
 							        	    </div>
 							        	    <div class="col-md-10">
@@ -386,11 +390,11 @@
 								        </div>
 								    </div>
 								</div>
-								<div class="card">
+								<div class="card course">
 								    <div class="card-body">
 								        <div class="row">
 							        	    <div class="col-md-2">
-							        	        <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"/>
+							        	        <img src="assets/img/dammy.jpg" class="img img-rounded img-fluid"/>
 							        	        <p class="text-secondary text-center"><i class="text-primary mdi mdi-36px mdi mdi-linkedin-box"></i></p>
 							        	    </div>
 							        	    <div class="col-md-10">
@@ -414,7 +418,7 @@
 						</div><!-- Review Section -->
 					</div>
 
-					<div class="col-sm-4">
+					<div class="col-md-4">
 
 						<!--Instructor Profile -->
 						<div class="enroll">
@@ -432,7 +436,7 @@
 							      </div>
 							      <div class="modal-body bg-light">
 							        <div class="container-fluid text-danger instructor-profile">
-									    <div class="float-right"><img src="assets/img/aep-logo.png" style=" margin: 0 auto;"></div>
+									    <div class="float-right"><img src="assets/img/tobi.jpg" style=" margin: 0 auto;height: auto;width: 120px;"></div>
 									    <h5 class="my-5"><b>Name:</b> Tobi Obasa</h5>
 									    <h5 class="my-5"><b>Certified:</b> PMP, ITIL</h5>
 									    <p class="mt-5"><b>About:</b> Tobi is a serial entrepreneur, project manager, management consultant and IT professional. He has a passion for project management, entrepreneurship, start-ups, technology, education and aviation. He has a background in Computer Science and Economics; he is a certified Project Management Professional (PMP) and ITIL professional, and has worked in the finance division at Goldman Sachs, London. Tobi is currently a lead consultant with Davton8020 Consulting, a company he founded. He also has managed multi-million US dollar projects in the aviation industry in Nigeria. He also managed the Entrepreneurship Programs of the Garden Institute of Business and Entrepreneurship (www.gardeninstituteng.com), which he co-founded. Tobi also founded a pioneering online private Jet Charter technology Company called Easycharter Intl. When he’s not working with startups, he loves to teach on project management and business and has trained thousands till date.</p>
@@ -443,10 +447,38 @@
 							</div>
 							<!-- Modal For Login -->				 
 
-					  		<a href="" class="btn btn-primary text-white btn-block mt-5 btn-enroll">Enroll Now</a>
+					  		<a href="plan.html" class="btn btn-primary text-white btn-block mt-5 btn-enroll">Enroll Now</a>
 					  	</div><!--Instructor Profile -->
 
-					  	<div class="card mt-5">
+					  	<div class="card my-5">
+							<div class="card-header text-dark">
+							    Discount
+							</div>
+							<div class="card-body text-dark">
+							    <h5 class="card-title fw-300">To enjoy amazing discount on this course. Use the following coupon codes</h5>
+							    <table class="table table-bordered table-inverse table-hover">
+								 	<thead>
+								 		<tr>
+								 			<th>Discount</th>
+								 			<th>Coupon Code</th>
+								 		</tr>
+								 	</thead>
+								 	<tbody>
+								 		<tr>
+								 			<td>30% off</td>
+								 			<td>XMAS30</td>
+								 		</tr>
+
+								 		<tr>
+								 			<td>50% off</td>
+								 			<td>XMAS50</td>
+								 		</tr>
+								 	</tbody>
+								 </table> 
+							</div>
+						</div>
+
+					  	<div class="card my-5">
 							<div class="card-header bg-dark text-white">
 							    Other Courses
 							</div>
@@ -476,7 +508,7 @@
 				</div>
 			</div>
 
-			<footer class="main">
+		<footer class="main">
 			<div class="container">
 				<div class="row">
 					<div class="col-12 col-sm-6 col-lg-3 links follow">
@@ -494,23 +526,20 @@
 					<div class="col-6 col-sm-6 col-lg-2 links">
 					  <h5>Company</h5>
 					  <ul>
-					  	<li><a href="">About us</a></li>
-					  	<li><a href="">Our team</a></li>
-					  	<li><a href="">Careers</a></li> 
+					  	<li><a href="about.html">About us</a></li>
+					  	<li><a href="team.html">Our team</a></li>
 					  </ul>	
 					</div>
 					<div class="col-6 col-sm-6 col-lg-3 links">
 					  <h5>Work with us</h5>
 					  <ul>
-					  	<li><a href="">Become an instructor</a></li>
-					  	<li><a href="">Become an affiliate</a></li>
+					  	<li><a href="become.html">Become an instructor</a></li>
 					  </ul>	
 					</div>
 					<div class="col-6 col-sm-6 col-lg-2 links">
 					  <h5>For Businesses</h5>
 					  <ul>
-					  	<li><a href="">Corporate training</a></li>
-					  	<li><a href="">Resellers</a></li>
+					  	<li><a href="corporate.html">Corporate training</a></li>
 					  </ul>		
 					</div>
 					<div class="col-6 col-sm-6 col-lg-2 links">
@@ -530,16 +559,16 @@
 
 				<div class="row pb-3">
 					<div class="col-6 col-lg-2 offset-lg-2 terms">
-					  <a href="">Terms of Use</a>	
+					  <a href="terms.html">Terms of Use</a>	
 					</div>
 					<div class="col-6 col-lg-2 terms">
-					  <a href=""> Privacy Policy </a>	
+					  <a href="terms.html"> Privacy Policy </a>	
 					</div>
 					<div class="col-6 col-lg-2 terms">
-					  <a href=""> Refund Policy </a>	
+					  <a href="terms.html"> Refund Policy </a>	
 					</div>
 					<div class="col-6 col-lg-2 terms last">
-					  <a href=""> Reschedule Policy</a>	
+					  <a href="terms.html"> Reschedule Policy</a>	
 					</div>
 				</div>
 			</div>
@@ -548,10 +577,7 @@
 		<footer class="sub">
 			<div class="container">
 				<div class="row sub-links">
-					<div class="col-2 col-md-3">
-					  <a href="" class="btn"><i class="mdi mdi-lifebuoy"></i><span class="d-none d-sm-inline" >Help<span class="d-none d-md-inline"> and Support</span></span></a>
-					</div>
-					<div class="col-2 col-md-3">
+					<div class="col-2 col-md-5">
 						<div class="btn-group dropup">
 						  	<a href="" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-cellphone-wireless"></i><span class="d-none d-sm-inline">Request<span class="d-none d-md-inline"> a callback</span></span></a>
 						  	<div class="callback dropdown-menu">
@@ -574,10 +600,10 @@
 									    <label for="reason">Reason for contact</label>
 									    <select class="form-control" id="reason">
 									      	<option value="services">Services</option>
-				                            <option value="services">In house training</option>
-				                            <option value="services">Corporate Licence</option>
-				                            <option value="services">Content partnership</option>
-				                            <option value="payment">payment Options</option>
+				                            <option value="in-house">In house training</option>
+				                            <option value="lms-deployment">Lms deployment content digitization</option>
+				                            <option value="partnership">Partnership</option>
+				                            <option value="payment">Payment options</option>
 				                            <option value="certification">Certification</option>
 				                            <option value="become_trainer">Become a Trainer</option>
 									    </select>
@@ -588,16 +614,22 @@
 						</div>
 					</div>
 					<div class="col-2 col-md-3">
-					  <a href="" class="btn"><i class="mdi mdi-phone"></i><span class="d-none d-sm-inline">Call us<span class="d-none d-md-inline">: +2348073914547</span></span></a>
+					  	<a href="" class="btn"><i class="mdi mdi-phone"></i><span class="d-none d-sm-inline">Call us<span class="d-none d-md-inline">: +2348073914547</span></span></a>
 					</div>
-					<div class="col-5 col-md-3">
-					  <a href="" class="btn chat float-right"><i class="mdi mdi-message-settings"></i>Live Chat</a>
+					<div class="col-5 col-md-4">
+					  	<a href="" class="btn chat float-right"><i class="mdi mdi-message-settings"></i>Live Chat</a>
 					</div>
 				</div>
 			</div>
 		</footer>
 
 		<!-- build:js -->
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="assets/js/dcalendar.picker.js"></script>
+		<script>
+			$('#demo').dcalendarpicker();
+			$('#calendar-demo').dcalendar(); //creates the calendar
+		</script>
 		<script src="assets/js/main.js"></script>
 		 <!-- endbuild -->
 
@@ -609,7 +641,6 @@
 		<script src="assets/js/intlTelInput.js"></script>
 		<script src="assets/js/video.js"></script>
 		<script src="assets/js/nav.js"></script>
-		<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
 
 	</body>
 
