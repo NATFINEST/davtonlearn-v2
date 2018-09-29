@@ -12,9 +12,10 @@
             	// $('.filter').filter('.'+categoryValue).show('3000');
             	$('.filter').filter('.'+categoryValue).css({'background-color':'transparent', 'opacity': '.9'});
 			}
-		},
-		function(){
-				$('.filter').css({'background-color':'transparent', 'opacity': '.9'});
-		});
+		}
+		// ,function(){
+		// 		$('.filter').css({'background-color':'transparent', 'opacity': '.9'});
+		// }
+		);
 	}
 }( jQuery ));

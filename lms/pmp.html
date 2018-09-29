@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- BEGIN HEAD -->
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="description" content="Responsive Admin Template" />
+    <meta name="author" content="SmartUniversity" />
+    <title>Smart University | Bootstrap Responsive Admin Template</title>
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" type="text/css" />
+    <!-- icons -->
+    <link href="fonts/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="fonts/material-design-icons/material-icon.css" rel="stylesheet" type="text/css" />
+    <!--bootstrap -->
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Material Design Lite CSS -->
+    <link rel="stylesheet" href="assets/plugins/material/material.min.css">
+    <link rel="stylesheet" href="assets/css/material_style.css">
+    <!-- Theme Styles -->
+    <link href="assets/css/theme/light/theme_style.css" rel="stylesheet" id="rt_style_components" type="text/css" />
+    <link href="assets/css/theme/light/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/plugins.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/theme/light/theme-color.css" rel="stylesheet" type="text/css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" /> 
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+ <!-- END HEAD -->
+<body class="page-header-fixed sidemenu-closed-hidelogo page-content-white page-md header-white white-sidebar-color logo-white">
+    <div class="page-wrapper">
+        <!-- start header -->
+        <div class="page-header navbar navbar-fixed-top">
+            <div class="page-header-inner ">
+                <!-- logo start -->
+                <div>
+                    <a href="index.html" class="page-logo">
+                        <!-- <img src="assets/img/logo.png">  -->
+                    </a>
+                </div>
+                <!-- logo end -->
+                <ul class="nav navbar-nav navbar-left in">
+                    <li><a href="#" class="menu-toggler sidebar-toggler"><i class="icon-menu"></i></a></li>
+                </ul>
+                 <form class="search-form-opened" action="#" method="GET">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search..." name="query">
+                        <span class="input-group-btn">
+                          <a href="javascript:;" class="btn submit">
+                             <i class="icon-magnifier"></i>
+                           </a>
+                        </span>
+                    </div>
+                </form>
+                <!-- start mobile menu -->
+                <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span></span>
+                </a>
+               <!-- end mobile menu -->
+                <!-- start header menu -->
+                <div class="top-menu">
+                    <ul class="nav navbar-nav pull-right">
+                        <!-- start message dropdown -->
+                        <li class="dropdown dropdown-extended dropdown-inbox" id="header_inbox_bar">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                <i class="fa fa-envelope-o"></i>
+                                <span class="badge headerBadgeColor2"> 2 </span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="external">
+                                    <h3><span class="bold">Messages</span></h3>
+                                    <span class="notification-label cyan-bgcolor">New 2</span>
+                                </li>
+                                <li>
+                                    <ul class="dropdown-menu-list small-slimscroll-style" data-handle-color="#637283">
+                                        <li>
+                                            <a href="#">
+                                                <span class="photo">
+                                                    <img src="assets/img/dammy.jpg" class="img-circle" alt=""> </span>
+                                                <span class="subject">
+                                                    <span class="from"> Sarah Smith </span>
+                                                    <span class="time">Just Now </span>
+                                                </span>
+                                                <span class="message"> Jatin I found you on LinkedIn... </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="photo">
+                                                    <img src="assets/img/tobi.jpg" class="img-circle" alt=""> </span>
+                                                <span class="subject">
+                                                    <span class="from"> John Deo </span>
+                                                    <span class="time">16 mins </span>
+                                                </span>
+                                                <span class="message"> Fwd: Important Notice Regarding Your Domain Name... </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="photo">
+                                                    <img src="assets/img/nat.jpg" class="img-circle" alt=""> </span>
+                                                <span class="subject">
+                                                    <span class="from"> Rajesh </span>
+                                                    <span class="time">2 hrs </span>
+                                                </span>
+                                                <span class="message"> pls take a print of attachments. </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="photo">
+                                                    <img src="assets/img/tobi.jpg" class="img-circle" alt=""> </span>
+                                                <span class="subject">
+                                                    <span class="from"> Lina Smith </span>
+                                                    <span class="time">40 mins </span>
+                                                </span>
+                                                <span class="message"> Apply for Ortho Surgeon </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="photo">
+                                                    <img src="assets/img/nat.jpg" class="img-circle" alt=""> </span>
+                                                <span class="subject">
+                                                    <span class="from"> Jacob Ryan </span>
+                                                    <span class="time">46 mins </span>
+                                                </span>
+                                                <span class="message"> Request for leave application. </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="dropdown-menu-footer">
+                                        <a href="#"> All Messages </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- end message dropdown -->
+                        <!-- start manage user dropdown -->
+                        <li class="dropdown dropdown-user">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                <img alt="" class="img-circle " src="assets/img/dammy.jpg" />
+                                <span class="username username-hide-on-mobile"> Dammy </span>
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-default">
+                                <li>
+                                    <a href="user_profile.html">
+                                        <i class="icon-user"></i> Profile </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon-settings"></i> Settings
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon-directions"></i> Help
+                                    </a>
+                                </li>
+                                <li class="divider"> </li>
+                                <li>
+                                    <a href="lock_screen.html">
+                                        <i class="icon-lock"></i> Lock
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="login.html">
+                                        <i class="icon-logout"></i> Log Out </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- end manage user dropdown -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- end header -->
+        <!-- start page container -->
+        <div class="page-container">
+            <!-- start sidebar menu -->
+            <div class="sidebar-container">
+                <div class="sidemenu-container navbar-collapse collapse fixed-menu">
+                    <div id="remove-scroll" class="left-sidemenu">
+                        <ul class="sidemenu  page-header-fixed slimscroll-style" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" style="padding-top: 20px">
+                            <li class="sidebar-toggler-wrapper hide">
+                                <div class="sidebar-toggler">
+                                    <span></span>
+                                </div>
+                            </li>
+                            <li class="sidebar-user-panel">
+                                <div class="user-panel">
+                                    <div class="pull-left image">
+                                        <img src="assets/img/dammy.jpg" class="img-circle user-img-circle" alt="User Image" />
+                                    </div>
+                                    <div class="pull-left info">
+                                        <p> Olutu Dammy</p>
+                                        <a href=""><i class="fa fa-circle user-online"></i><span class="txtOnline"> Online</span></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link nav-toggle"> <i class="material-icons">dashboard</i>
+                                    <span class="title">Dashboard</span> 
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link nav-toggle"> <i class="material-icons">person</i>
+                                    <span class="title">Profile</span> 
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link nav-toggle"> <i class="material-icons">mail</i>
+                                    <span class="title">Mesaages</span> 
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end sidebar menu --> 
+            <!-- start page content -->
+            <div class="page-content-wrapper">
+                <div class="page-content">
+                    <div class="page-bar">
+                        <div class="page-title-breadcrumb">
+                            <div class=" pull-left">
+                                <div class="page-title">PMP</div>
+                            </div>
+                            <ol class="breadcrumb page-breadcrumb pull-right">
+                                <li><i class="fa fa-home"></i>&nbsp;<a class="parent-item" href="index.html">Home</a>&nbsp;<i class="fa fa-angle-right"></i>
+                                </li>
+                                <li><a class="parent-item" href="#">Course</a>&nbsp;<i class="fa fa-angle-right"></i>
+                                </li>
+                                <li class="active">PMP</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-5 col-sm-5">
+
+                            <!-- section1 -->
+                            <div class="panel-group accordion" id="section1">
+                                <div class="panel panel-default">
+                                      <div class="panel-heading panel-heading-white">
+                                          <h4 class="panel-title">
+                                              <a class="accordion-toggle accordion-toggle-styled collapsed" data-toggle="collapse" data-parent="#section1" href="#collapse_3_1"> Section 1: Project management introduction </a>
+                                          </h4>
+                                      </div>
+                                      <div id="collapse_3_1" class="panel-collapse in collapse">
+                                          <div class="panel-body">
+                                                <ul class="list-group list-group-unbordered">
+                                                    <li class="list-group-item">
+                                                        <span><a href=""><i class="fa fa-circle completed"></i> Module 1 </a></span>
+                                                        <div class="profile-desc-item pull-right">
+                                                            <i class="fa fa-clock-o"></i> 2 hours 
+                                                            <a href=""><i class="fa fa-file-pdf-o"></i> Pdf File </a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <span><a href=""><i class="fa fa-circle completed"></i> Module 2 </a></span>
+                                                        <div class="profile-desc-item pull-right">
+                                                            <i class="fa fa-clock-o"></i> 45 minutes 
+                                                            <a href=""><i class="fa fa-file-pdf-o"></i> Pdf File </a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <span><a href=""><i class="fa fa-circle completed"></i> Section Quiz </a></span>
+                                                        <div class="profile-desc-item pull-right">
+                                                            <i class="fa fa-clock-o"></i> 3 hours 
+                                                            <a href=""><i class="fa fa-question-circle"></i> Quiz </a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                          </div>
+                                      </div>
+                                  </div>
+                            </div><!-- section1 -->
+
+                            <!-- section2 -->
+                            <div class="panel-group accordion" id="section2">
+                                <div class="panel panel-default">
+                                      <div class="panel-heading panel-heading-white">
+                                          <h4 class="panel-title">
+                                              <a class="accordion-toggle accordion-toggle-styled collapsed" data-toggle="collapse" data-parent="#section2" href="#collapse_2"> Section 2: Project management framework </a>
+                                          </h4>
+                                      </div>
+                                      <div id="collapse_2" class="panel-collapse in collapse">
+                                          <div class="panel-body">
+                                                <ul class="list-group list-group-unbordered">
+                                                    <li class="list-group-item">
+                                                        <span><a href=""><i class="fa fa-circle completed"></i> Module 1 </a></span>
+                                                        <div class="profile-desc-item pull-right">
+                                                            <i class="fa fa-clock-o"></i> 2 hours 
+                                                            <a href=""><i class="fa fa-file-pdf-o"></i> Pdf File </a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <span><a href=""><i class="fa fa-circle completed"></i> Module 2 </a></span>
+                                                        <div class="profile-desc-item pull-right">
+                                                            <i class="fa fa-clock-o"></i> 45 minutes 
+                                                            <a href=""><i class="fa fa-file-pdf-o"></i> Pdf File </a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <span><a href=""><i class="fa fa-circle pending"></i> Module 3 </a></span>
+                                                        <div class="profile-desc-item pull-right">
+                                                            <i class="fa fa-clock-o"></i> 45 minutes 
+                                                            <a href=""><i class="fa fa-file-pdf-o"></i> Pdf File </a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <span><a href=""><i class="fa fa-circle pending"></i> Section Quiz </a></span>
+                                                        <div class="profile-desc-item pull-right">
+                                                            <i class="fa fa-clock-o"></i> 3 hours 
+                                                            <a href=""><i class="fa fa-question-circle"></i> Quiz </a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                          </div>
+                                      </div>
+                                  </div>
+                            </div><!-- section2 -->
+
+                            <!-- section3 -->
+                            <div class="panel-group accordion" id="section3">
+                                <div class="panel panel-default">
+                                      <div class="panel-heading panel-heading-white">
+                                          <h4 class="panel-title">
+                                              <a class="accordion-toggle accordion-toggle-styled collapsed" data-toggle="collapse" data-parent="#section3" href="#collapse_3"> Section 3: Project management scope </a>
+                                          </h4>
+                                      </div>
+                                      <div id="collapse_3" class="panel-collapse in collapse">
+                                          <div class="panel-body">
+                                                <ul class="list-group list-group-unbordered">
+                                                    <li class="list-group-item">
+                                                        <span><a href=""><i class="fa fa-circle completed"></i> Module 1 </a></span>
+                                                        <div class="profile-desc-item pull-right">
+                                                            <i class="fa fa-clock-o"></i> 2 hours 
+                                                            <a href=""><i class="fa fa-file-pdf-o"></i> Pdf File </a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <span><a href=""><i class="fa fa-circle completed"></i> Module 2 </a></span>
+                                                        <div class="profile-desc-item pull-right">
+                                                            <i class="fa fa-clock-o"></i> 45 minutes 
+                                                            <a href=""><i class="fa fa-file-pdf-o"></i> Pdf File </a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <span><a href=""><i class="fa fa-circle completed"></i> Section Quiz </a></span>
+                                                        <div class="profile-desc-item pull-right">
+                                                            <i class="fa fa-clock-o"></i> 3 hours 
+                                                            <a href=""><i class="fa fa-question-circle"></i> Quiz </a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                          </div>
+                                      </div>
+                                  </div>
+                            </div><!-- section3 -->
+
+                            <!-- section4 -->
+                            <div class="panel-group accordion" id="section4">
+                                <div class="panel panel-default">
+                                      <div class="panel-heading panel-heading-white">
+                                          <h4 class="panel-title">
+                                              <a class="accordion-toggle accordion-toggle-styled collapsed" data-toggle="collapse" data-parent="#section4" href="#collapse_4"> Section 4: Project management foundation </a>
+                                          </h4>
+                                      </div>
+                                      <div id="collapse_4" class="panel-collapse in collapse">
+                                          <div class="panel-body">
+                                                <ul class="list-group list-group-unbordered">
+                                                    <li class="list-group-item">
+                                                        <span><a href=""><i class="fa fa-circle completed"></i> Module 1 </a></span>
+                                                        <div class="profile-desc-item pull-right">
+                                                            <i class="fa fa-clock-o"></i> 2 hours 
+                                                            <a href=""><i class="fa fa-file-pdf-o"></i> Pdf File </a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <span><a href=""><i class="fa fa-circle completed"></i> Module 2 </a></span>
+                                                        <div class="profile-desc-item pull-right">
+                                                            <i class="fa fa-clock-o"></i> 45 minutes 
+                                                            <a href=""><i class="fa fa-file-pdf-o"></i> Pdf File </a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <span><a href=""><i class="fa fa-circle pending"></i> Module 3 </a></span>
+                                                        <div class="profile-desc-item pull-right">
+                                                            <i class="fa fa-clock-o"></i> 45 minutes 
+                                                            <a href=""><i class="fa fa-file-pdf-o"></i> Pdf File </a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <span><a href=""><i class="fa fa-circle pending"></i> Section Quiz </a></span>
+                                                        <div class="profile-desc-item pull-right">
+                                                            <i class="fa fa-clock-o"></i> 3 hours 
+                                                            <a href=""><i class="fa fa-question-circle"></i> Quiz </a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                          </div>
+                                      </div>
+                                  </div>
+                            </div><!-- section4 -->
+
+                            <!-- Contact Instructor -->
+                            <div class="card-box">
+                                <div class="card-head">
+                                    <header>Contact Instructor</header>
+                                </div>
+                                <div class="card-body ">
+                                    <div class="mail-list">
+                                           <div class="compose-mail">
+                                               <form method="post">
+                                                   <textarea name="details" placeholder="Message Content" class="form-control-textarea" rows="5"></textarea>
+                                                <div class="box-footer clearfix">
+                                                  <button type="button" class="mdl-button mdl-button--raised mdl-js-ripple-effect m-b-10 btn-primary pull-right mt-3" data-upgraded=",MaterialRipple">Send <i class="fa fa-paper-plane-o"></i></button>
+                                                </div>
+                                               </form>
+                                           </div>
+                                       </div>
+                                </div>
+                            </div><!-- Contact Instructor -->
+
+                        </div>
+
+
+                        <div class="col-md-7 col-sm-7">
+                            <!-- Video Player -->
+                            <iframe class="sproutvideo-player" src="http://videos.sproutvideo.com/embed/709bdcb81b15e1c0f8/22975ec39044a44d?type=sd" width="100%" height="350" frameborder="0" allowfullscreen=""></iframe><!-- Video Player -->
+
+                            <div class="input-group input-group-sm mt-4">
+                                <input type="text" class="form-control" style="height: 40px" placeholder="Write something ...">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-info btn-flat">Comment <i class="fa fa-paper-plane-o"></i></button>
+                                </span>
+                            </div>
+
+                            <div class="panel tab-border card-box mt-4">
+                                <header class="panel-heading panel-heading-gray custom-tab py-0">
+                                    <ul class="nav nav-tabs mb-0">
+                                        <li class="nav-item">
+                                            <a href="#desc" data-toggle="tab" class="active show"> 
+                                                <i class="fa fa-info"></i> Description
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#comments" data-toggle="tab" class="">
+                                                <i class="fa fa-comment"></i> Comments
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#participant" data-toggle="tab" class="">
+                                                <i class="fa fa-user"></i> Participants
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </header>
+                                <div class="panel-body">
+                                    <div class="tab-content">
+                                        <div class="tab-pane active show" id="desc">
+                                            <p>The PMP certification is the global gold standard for project management professionals.Keep abreast of the changes in the project management practices updated in PMBOK guide - 6th edition and pass the PMP® exam on your first attempt with Simplilearn’s PMP new course. The course covers new trends, emerging practices, tailoring considerations, and has a greater emphasis on strategic and business knowledge and a new section on the role of the project manager.</p>
+                                        </div>
+                                        <div class="tab-pane" id="comments">
+                                            <div class="card  card-box">
+                                                <div class="card-body no-padding height-9">
+                                                    <div class="row">
+                                                        <ul class="chat nice-chat small-slimscroll-style">
+                                                            <li class="in"><img src="assets/img/nat.jpg" class="avatar" alt="">
+                                                                <div class="message">
+                                                                    <span class="arrow"></span> 
+                                                                    <a class="name" href="#">Odukaphie Nathaniel</a> 
+                                                                    <span class="datetime">at Mar 12, 2018 6:12</span> 
+                                                                    <span class="body"> Hi guys </span>
+                                                                </div>
+                                                            </li>
+                                                            <li class="out"><img src="assets/img/dammy.jpg" class="avatar" alt="">
+                                                                <div class="message">
+                                                                    <span class="arrow"></span> 
+                                                                    <a class="name" href="#">Olotu Dammy</a> 
+                                                                    <span class="datetime">at Mar 13, 2018 2:12</span> 
+                                                                    <span class="body"> Hello Nat </span>
+                                                                </div>
+                                                            </li>
+                                                            <li class="in"><img src="assets/img/tobi.jpg" class="avatar" alt="">
+                                                                <div class="message">
+                                                                    <span class="arrow"></span> 
+                                                                    <a class="name" href="#">Olotu Dammy</a> 
+                                                                    <span class="datetime">at Mar 13, 2018 8:34</span> 
+                                                                    <span class="body"> Hope we all are enjoying this course </span>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="participant">
+                                            <div class="card card-box mb-0">
+                                                <div class="card-body ">
+                                                    <div class="row">
+                                                        <div class="slimScrollDiv" style="position: relative; overflow: hidden;width: 100%">
+                                                            <ul class="docListWindow small-slimscroll-style" style="overflow: hidden;">
+                                                            <li>
+                                                                <div class="prog-avatar">
+                                                                    <img src="assets/img/dammy.jpg" alt="" width="40" height="40">
+                                                                </div>
+                                                                <div class="details">
+                                                                    <div class="title">
+                                                                        <a href="#">Olotu Damilola</a>
+                                                                    </div>
+                                                                        <div>
+                                                                            <span class="clsAvailable">Online</span>
+                                                                        </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="prog-avatar">
+                                                                    <img src="assets/img/tobi.jpg" alt="" width="40" height="40">
+                                                                </div>
+                                                                <div class="details">
+                                                                    <div class="title">
+                                                                        <a href="#">Tobi Obasa</a>
+                                                                    </div>
+                                                                    <div>
+                                                                        <span class="clsAvailable">Online</span>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="prog-avatar">
+                                                                    <img src="assets/img/dammy.jpg" alt="" width="40" height="40">
+                                                                </div>
+                                                                <div class="details">
+                                                                    <div class="title">
+                                                                        <a href="#">Olotu Damilola</a>
+                                                                    </div>
+                                                                    <div>
+                                                                        <span class="clsNotAvailable">Offline</span>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="prog-avatar">
+                                                                    <img src="assets/img/nat.jpg" alt="" width="40" height="40">
+                                                                </div>
+                                                                <div class="details">
+                                                                    <div class="title">
+                                                                        <a href="#">Odukpahie Nathaniel</a>
+                                                                    </div>
+                                                                    <div>
+                                                                        <span class="clsAvailable">Online</span>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- end page content -->
+            </div>
+            <!-- end page container -->
+        </div>
+        <!-- end page container -->
+        <!-- start footer -->
+        <div class="page-footer">
+            <div class="page-footer-inner"> 2018 &copy; Davtonlearn</div>
+            <div class="scroll-to-top">
+                <i class="icon-arrow-up"></i>
+            </div>
+        </div>
+        <!-- end footer -->
+    </div>
+    <!-- start js include path -->
+    <script src="assets/plugins/jquery/jquery.min.js" ></script>
+    <script src="assets/plugins/popper/popper.js" ></script>
+    <script src="assets/plugins/jquery-blockui/jquery.blockui.min.js" ></script>
+    <script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+    <!-- bootstrap -->
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js" ></script>
+    <script src="assets/plugins/bootstrap-switch/js/bootstrap-switch.min.js" ></script>
+    <!-- Common js-->
+    <script src="assets/js/app.js" ></script>
+    
+    <script src="assets/js/layout.js" ></script>
+    <script src="assets/js/theme-color.js" ></script>
+    <!-- Material -->
+    <script src="assets/plugins/material/material.min.js"></script>
+    <!-- end js include path -->
+  </body>
+
+</html>
