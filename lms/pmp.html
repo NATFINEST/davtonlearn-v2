@@ -243,7 +243,36 @@
 
                     <div class="row">
                         <div class="col-md-5 col-sm-5">
-
+                            <button class="btn btn-primary ad-btn mb-2 mb-md-4 w-100" data-toggle="modal" data-target="#advert">DOWNLOAD CERTIFICATE</button>
+                            <!-- Modal For Advert -->
+                            <div class="modal fade" id="advert" tabindex="-1" role="dialog" aria-labelledby="advert" aria-hidden="true">
+                              <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header bg-dark">
+                                    <h5 class="modal-title text-white" id="advert">Name on Certificate</h5>
+                                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <div class="container-fluid text-danger">
+                                        <div class="row">
+                                            <form class="w-100">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Enter Name" >
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <a href="cert/cert.html" type="button" class="btn btn-primary">Proceed</a>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Modal For Advert -->
                             <!-- section1 -->
                             <div class="panel-group accordion" id="section1">
                                 <div class="panel panel-default">
